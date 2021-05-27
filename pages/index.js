@@ -48,10 +48,10 @@ const Home = () => {
           <Col className="gutter-row" span={12}>
             <Card size="small" style={{ marginBottom: 8 }}>
               <Col>
-                <Typography.Title level={5}>
+                <Typography.Text>
                   Faucet Balance
-                </Typography.Title>
-                <Typography.Text>0.01 Eth</Typography.Text>
+                </Typography.Text>
+                <Typography.Title level={1}>0.01 Eth</Typography.Title>
               </Col>
             </Card>
           </Col>
