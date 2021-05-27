@@ -1,6 +1,7 @@
 import React from "react";
 import "antd/dist/antd.css";
 import {
+    Badge ,
   Typography,
   Divider,
   Col,
@@ -25,26 +26,36 @@ const Home = () => {
             Rinkeby Faucet
           </Typography.Title>
           <img
+          style={{ marginBottom: 40 }}
             width={60}
             src={
               "https://ethereum.org/static/c48a5f760c34dfadcf05a208dab137cc/31987/eth-diamond-rainbow.png"
             }
           />
         </center>
-        <Row gutter={16}>
-      <Col className="gutter-row" span={6}>
-        <div >col-6</div>
-      </Col>
-      <Col className="gutter-row" span={6}>
-        <div >col-6</div>
-      </Col>
-      <Col className="gutter-row" span={6}>
-        <div>col-6</div>
-      </Col>
-      <Col className="gutter-row" span={6}>
-        <div>col-6</div>
-      </Col>
-    </Row>
+        <Row gutter={8}>
+          
+          <Col className="gutter-row" span={12}>
+            <Card size="small" style={{ marginBottom: 8 }}>
+              <Col>
+                <Typography.Title level={5}>
+                  Transaction Value
+                </Typography.Title>
+                <Typography.Text>0.01 Eth</Typography.Text>
+              </Col>
+            </Card>
+          </Col>
+          <Col className="gutter-row" span={12}>
+            <Card size="small" style={{ marginBottom: 8 }}>
+              <Col>
+                <Typography.Title level={5}>
+                  Faucet Balance
+                </Typography.Title>
+                <Typography.Text>0.01 Eth</Typography.Text>
+              </Col>
+            </Card>
+          </Col>
+        </Row>
         <div
           style={{
             marginTop: "40px",
@@ -70,10 +81,10 @@ const Home = () => {
           <div
             style={{
               marginTop: "20px",
-              marginBottom: "10px",
+              marginBottom: "40px",
             }}
           >
-            <Divider orientation="left">Transaction History</Divider>
+            <Divider orientation="left" plain>Transaction History (15)</Divider>
             <Card size="small" style={{ marginBottom: 8 }}>
               <Col>
                 <Typography.Title level={5}>
